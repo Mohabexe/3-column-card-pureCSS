@@ -43,7 +43,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 85%;
     background-color: var(--Very-light-gray);
   }
   img{
@@ -98,7 +98,7 @@
         margin-bottom: -1rem;
         background-color: white;
         font-family: "Lexend Deca", sans-serif;
-        font-weight: 700;
+        font-weight: 400;
         border: none;
         cursor: pointer;
         font-size: 1rem;
@@ -112,13 +112,40 @@
     .btn-3{
         color: var(--Very-dark-cyan);
     }
+footer{
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    color: var(--Bright-orange);
+    font-size: 0.8rem;
+    text-align: center;
+}
+footer a{
+    color: var(--Dark-cyan);
+    text-decoration: none;
+}
 
+    @media (max-width: 1000px) and (min-width: 801px){
+        
+        main{
+            height: 90%;
+        }
+        
+        .cards{
+            width: 80%;
+        }
+        .btn{
+            width: 80%;
+        }
+}
     @media (max-width: 800px) and (min-width: 401px){
         .cards{
             width: 90%;
         }
         .btn{
             width: 80%;
+        }
+        main{
+            height: 70%;
         }
     }
     @media (max-width: 400px){
@@ -131,6 +158,7 @@
         main{
             margin-top: 5rem;
             margin-bottom: 5rem;
+            height: 50%;
         }
         .cards{
             flex-direction: column;
@@ -153,6 +181,12 @@
             border-top-left-radius: 0;
             border-bottom-right-radius: 10px;
             border-bottom-left-radius: 10px;
+        }
+        footer{
+            height: 10vh;
+            margin-top: -2rem;
+            font-size: 0.7rem;
+
         }
     }
     
